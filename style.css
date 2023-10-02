@@ -1,0 +1,59 @@
+html,body{
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.panneaux{
+    width: 100vw;
+    height: 100vh;
+    background-color: blue;
+    display: flex;
+
+}
+
+.panneau{
+    height: 100%;
+    flex :1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: flex 2s cubic-bezier(.25,.76,.23,.21);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.panneau:hover{
+    flex:3;
+
+}
+.panneau>.etiquette{
+    opacity: 100%;
+    font-size: 50px;
+
+    }
+.panneau:hover>.etiquette{
+    transform: translateY(300px);
+
+}
+
+
+
+/*#############images#####################################*/
+
+.img1{
+    background-image: url("couleurs/bleu.jpg");
+}
+.img2{
+    background-image: url("couleurs/jaune.jpg");
+}.img3{
+     background-image: url("couleurs/taupe.png");
+ }
+.img4{
+    background-image: url("couleurs/vert.png");
+}
+.img5{
+    background-image: url("couleurs/violet.jpg");
+}
+
